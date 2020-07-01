@@ -1,2 +1,2 @@
 # wildrig-multi
-multi algo miner for AMD
+multi algo miner for AMD & NVIDIA
