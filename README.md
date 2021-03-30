@@ -2,6 +2,8 @@
 multi algo miner for AMD & NVIDIA
 
 # KNOWN ISSUES
+- rejected shares on Vega gpu's for progpow family of algorithms if use kernel 2(kernel 1 works fine)
+- broken mtp algorithm under Linux, miner can't find any share
 - not all algorithms working on NVIDIA gpu's right now, and not all of them are optimized(see Release Notes)
 - broken honeycomb algoithm, last working version is **0.17.6**
 - any report is welcome! :)
@@ -16,6 +18,7 @@ multi algo miner for AMD & NVIDIA
 
 ## NVIDIA:
 - All gpu's with Compute Capabilities >=5.0 should work
+- also specific gpu can be supported via use of --ptx-version parameter(like --ptx-version 71 for sm_86, more ptx version here here)
 
 # SUPPORTED ALGORITHMS
 - aergo, anime
@@ -27,12 +30,13 @@ multi algo miner for AMD & NVIDIA
 - hex, hmq1725, honeycomb
 - kawpow
 - lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
-- mtp, mtp-tcr
+- megabtx, megamec, minotaur, mtp, mtp-tcr
 - nist5
-- phi, polytimos, progpowz, progpow-ethercore, progpow-sero
+- phi, phi5, polytimos, progpowz, progpow-ethercore, progpow-sero, progpow-veil
 - quark, quibit
 - renesis
 - sha256, sha256csm, sha256d, sha256q, sha256t, skein2, skunkhash, sonoa
 - timetravel, tribus
+- vprogpow
 - wildkeccak
-- x11, x12, x13, x14, x15, x16r, x16rv2, x16s, x17, x17,r x18, x20r, x21i, x21s, x25x, xevan
+- x11, x11k, x12, x13, x14, x15, x16r, x16rv2, x16s, x17, x17,r x18, x20r, x21s, x22i, x25x, x33, xevan
