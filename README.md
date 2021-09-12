@@ -15,10 +15,11 @@ multi algo miner for AMD & NVIDIA
 - **GCN 4th gen**: RX460, RX470, RX480, RX550, RX560, RX570, RX580, RX590
 - **GCN 5th gen**: Vega 11, Vega 56, Vega 64, Radeon VII
 - **RDNA 1st gen**: Radeon 5500XT, Radeon 5600XT, Radeon 5700, Radeon 5700XT
+- **RDNA 2nd gen**: Radeon 6500XT, Radeon 6600XT, Radeon 6700 XT, Radeon 6800XT, Radeon 6900 XT
 
 ## NVIDIA:
 - All gpu's with Compute Capabilities >=5.0 should work
-- also specific gpu can be supported via use of --ptx-version parameter(like --ptx-version 71 for sm_86, more ptx version here here)
+- also specific gpu can be supported via use of --ptx-version parameter(like --ptx-version 71 for sm_86, more ptx version is [here](https://docs.nvidia.com/cuda/parallel-thread-execution/#release-notes))
 
 # SUPPORTED ALGORITHMS
 - aergo, anime
