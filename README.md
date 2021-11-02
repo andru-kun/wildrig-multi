@@ -6,6 +6,7 @@ multi algo miner for AMD & NVIDIA
 - broken mtp algorithm under Linux, miner can't find any share
 - not all algorithms working on NVIDIA gpu's right now, and not all of them are optimized(see Release Notes)
 - broken honeycomb algoithm, last working version is **0.17.6**
+- "Duplicate share" error on some pools for progpowz
 - any report is welcome! :)
 
 # SUPPORTED GPU's
@@ -27,7 +28,7 @@ multi algo miner for AMD & NVIDIA
 - c11
 - dedal
 - exosis
-- geek, glt-astralhash, glt-globalhash, glt-jeonghash, glt-padihash, glt-pawelhash
+- geek, ghostrider, glt-astralhash, glt-globalhash, glt-jeonghash, glt-padihash, glt-pawelhash
 - hex, hmq1725, honeycomb
 - kawpow
 - lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
