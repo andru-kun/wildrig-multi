@@ -29,7 +29,7 @@ multi algo miner for AMD & NVIDIA
 - dedal
 - exosis
 - geek, ghostrider, glt-astralhash, glt-globalhash, glt-jeonghash, glt-padihash, glt-pawelhash
-- hex, hmq1725, honeycomb
+- heavyhash, hex, hmq1725, honeycomb
 - kawpow
 - lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
 - megabtx, megamec, minotaur, mtp, mtp-tcr
@@ -42,3 +42,8 @@ multi algo miner for AMD & NVIDIA
 - vprogpow
 - wildkeccak
 - x11, x11k, x12, x13, x14, x15, x16r, x16rv2, x16s, x17, x17,r x18, x20r, x21s, x22i, x25x, x33, xevan
+
+# DEV-FEE:
+- by default is 1%
+- lyra2TDC, megabtx, phi5, sha256csm, x17r and wildkeccak algorithms are 2%
+- minotaur is 5%
