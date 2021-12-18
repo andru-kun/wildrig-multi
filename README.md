@@ -74,6 +74,7 @@ multi algo miner for AMD & NVIDIA
       --protocol=PROTOCOL       set stratum protocol(ethproxy, ethstratum, stratum, stratum1, stratum2, ufo, ufo2)
 
       --watchdog                enable checking how long videocards are running OpenCL kernel(terminate if more than 30 sec.)
+      --watchdog-script=FILE    set file to execute when watchdog triggers(can be used without --watchdog parameter)\n\
       --strategy=N              strategy of feeding videocards with job(default: 0)
       --split-job=N             set amount of gpu's(or threads of it, keep this in mind) solving one job
 
