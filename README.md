@@ -41,7 +41,7 @@ multi algo miner for AMD & NVIDIA
 - timetravel, tribus
 - vprogpow
 - wildkeccak
-- x11, x11k, x12, x13, x14, x15, x16r, x16rv2, x16rt, x16s, x17, x17,r x18, x20r, x21s, x22i, x25x, x33, xevan
+- 0x10, x11, x11k, x12, x13, x14, x15, x16r, x16rv2, x16rt, x16s, x17, x17,r x18, x20r, x21s, x22i, x25x, x33, xevan
 
 # DEV-FEE:
 - by default is 1%
