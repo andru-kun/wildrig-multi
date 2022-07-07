@@ -25,7 +25,7 @@ multi algo miner for AMD & NVIDIA
 # SUPPORTED ALGORITHMS
 - aergo, anime
 - bcd, bitcore, blake2b-btcc, blake2b-glt, blake2s, bmw512
-- c11
+- c11, curvehash
 - dedal
 - exosis
 - geek, ghostrider, glt-astralhash, glt-globalhash, glt-jeonghash, glt-padihash, glt-pawelhash
@@ -114,7 +114,6 @@ multi algo miner for AMD & NVIDIA
       --api-port=N              port for API
       --api-worker-id=ID        custom worker-id for API
 
-      --donate-level=N          donate level(default: 1%%, 1 minute in 100 minutes)
   -h, --help                    display this help and exit
   -V, --version                 output version information and exit
 ```
