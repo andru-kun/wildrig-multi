@@ -38,7 +38,7 @@ multi algo miner for AMD & NVIDIA
 - phi, phi5, polytimos, progpowz, progpow-ethercore, progpow-sero, progpow-veil
 - quark, quibit
 - renesis
-- sha256, sha256csm, sha256d, sha256q, sha256t, skein2, skunkhash, sonoa
+- sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, skein2, skunkhash, sonoa
 - timetravel, tribus
 - vprogpow
 - wildkeccak
