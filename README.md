@@ -51,6 +51,9 @@ multi algo miner for AMD & NVIDIA
 
 # OPTIONS
 ```
+Usage: wildrig [OPTIONS]
+
+Options:
   -a, --algo ALGO               specify the hash algorithm to use
 
       --benchmark               run offline benchmark
@@ -60,6 +63,7 @@ multi algo miner for AMD & NVIDIA
       --benchmark-timeout       run offline benchmark and/or set how long to run benchmark in seconds(default: 0)
 
   -o, --url URL                 URL of mining server
+      --proxy                   set ip:port to connect via SOCKS5 proxy
   -O, --userpass U:P            username:password pair for mining server
   -u, --user USERNAME           username for mining server
   -p, --pass PASSWORD           password for mining server
@@ -75,9 +79,9 @@ multi algo miner for AMD & NVIDIA
       --protocol PROTOCOL       set stratum protocol(ethproxy, ethstratum, stratum, stratum1, stratum2, ufo, ufo2)
 
       --watchdog                enable checking how long videocards are running OpenCL kernel(terminate if more than 30 sec.)
-      --watchdog-script FILE    set file to execute when watchdog triggers(can be used without --watchdog parameter)\n\
-      --strategy=N              strategy of feeding videocards with job(default: 0)
-      --split-job=N             set amount of gpu's(or threads of it, keep this in mind) solving one job
+      --watchdog-script FILE    set file to execute when watchdog triggers(can be used without --watchdog parameter)
+      --strategy N              strategy of feeding videocards with job(default: 0)
+      --split-job N             set amount of gpu's(or threads of it, keep this in mind) solving one job
 
       --scratchpad-url URL      where miner can download scratchpad for wildkeccak algo 
       --scratchpad-file FILE    where to save scratchpad(including file name)
@@ -103,16 +107,14 @@ multi algo miner for AMD & NVIDIA
 
       --multiple-instance       allow multiple instances running at one time
       --user-agent AGENT        set custom user-agent string for pool
-  -l, --log-file=FILE           log all output to a file
+  -l, --log-file FILE           log all output to a file
 
       --no-color                disable colored output
       --print-time N            print hashrate report every N seconds
-      --print-full              print hashrate for each videocard
-      --print-statistics        print additional statistics
+      --print-statistics        print additional statistics(not implemented yet)
       --print-debug             print debug information
-      --print-power             print power consumption per GPU chip
 
-      --api-port=N              port for API
+      --api-port N              port for API
       --api-worker-id ID        custom worker-id for API
 
   -h, --help                    display this help and exit
