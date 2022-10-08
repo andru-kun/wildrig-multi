@@ -35,7 +35,7 @@ multi algo miner for AMD & NVIDIA
 - lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
 - megabtx, megamec, minotaur, mtp, mtp-tcr
 - nist5
-- phi, phi5, polytimos, progpowz, progpow-ethercore, progpow-sero, progpow-veil
+- phi, phi5, polytimos, progpowz, progpow-ethercore, progpow-sero, progpow-veil, pufferfish2
 - quark, quibit
 - renesis
 - sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, skein2, skunkhash, sonoa
