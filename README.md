@@ -27,7 +27,7 @@ multi algo miner for AMD & NVIDIA
 - bcd, bitcore, blake2b-btcc, blake2b-glt, blake2s, blake3, bmw512
 - c11, curvehash
 - dedal
-- exosis
+- evrprogpow, exosis
 - firopow
 - geek, ghostrider, glt-astralhash, glt-globalhash, glt-jeonghash, glt-padihash, glt-pawelhash
 - heavyhash, hex, hmq1725, honeycomb
