@@ -16,6 +16,7 @@ multi algo miner for AMD & NVIDIA
 - **GCN 5th gen**: Vega 11, Vega 56, Vega 64, Radeon VII
 - **RDNA 1st gen**: Radeon 5500XT, Radeon 5600XT, Radeon 5700, Radeon 5700XT
 - **RDNA 2nd gen**: Radeon 6500XT, Radeon 6600XT, Radeon 6700 XT, Radeon 6800XT, Radeon 6900 XT
+- **RDNA 3nd gen**: Radeon 7900XTX/XT, 7800XT, 7700XT
 
 ## NVIDIA:
 - All gpu's with Compute Capabilities >=5.0 should work
@@ -33,11 +34,11 @@ multi algo miner for AMD & NVIDIA
 - kawpow
 - lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
 - megabtx, megamec, minotaur, mtp, mtp-tcr
-- nist5
+- nexapow, nist5
 - phi, phi5, polytimos, progpowz, progpow-ethercore, progpow-sero, progpow-veil, pufferfish2
 - quark, quibit
 - renesis
-- sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, skein2, skunkhash, sonoa
+- sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, shandwich256, skein2, skunkhash, skydoge, sonoa
 - timetravel, tribus
 - vprogpow
 - wildkeccak
