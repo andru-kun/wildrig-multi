@@ -3,9 +3,7 @@ multi algo miner for AMD & NVIDIA
 
 # KNOWN ISSUES
 - rejected shares on Vega gpu's for progpow family of algorithms if use kernel 2(kernel 1 works fine)
-- broken mtp algorithm under Linux, miner can't find any share
 - not all algorithms working on NVIDIA gpu's right now, and not all of them are optimized(see Release Notes)
-- broken honeycomb algoithm, last working version is **0.17.6**
 - any report is welcome! :)
 
 # SUPPORTED GPU's
@@ -16,7 +14,7 @@ multi algo miner for AMD & NVIDIA
 - **GCN 5th gen**: Vega 11, Vega 56, Vega 64, Radeon VII
 - **RDNA 1st gen**: Radeon 5500XT, Radeon 5600XT, Radeon 5700, Radeon 5700XT
 - **RDNA 2nd gen**: Radeon 6500XT, Radeon 6600XT, Radeon 6700 XT, Radeon 6800XT, Radeon 6900 XT
-- **RDNA 3nd gen**: Radeon 7900XTX/XT, 7800XT, 7700XT
+- **RDNA 3nd gen**: Radeon 7700XT, 7800XT, 7900XTX/XT
 
 ## NVIDIA:
 - All gpu's with Compute Capabilities >=5.0 should work
@@ -27,27 +25,25 @@ multi algo miner for AMD & NVIDIA
 - bcd, bitcore, blake2b-btcc, blake2b-glt, blake2s, blake3, bmw512
 - c11, curvehash
 - dedal
-- evrprogpow, exosis
+- evrprogpow
 - firopow
 - geek, ghostrider, glt-astralhash, glt-globalhash, glt-jeonghash, glt-padihash, glt-pawelhash
-- heavyhash, hex, hmq1725, honeycomb
+- heavyhash, hex, hmq1725
 - kawpow
 - lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
-- megabtx, megamec, minotaur, mtp, mtp-tcr
+- megabtx, minotaur
 - nexapow, nist5
-- phi, phi5, polytimos, progpowz, progpow-ethercore, progpow-sero, progpow-veil, pufferfish2
+- phi, phi5, progpowz, progpow-ethercore, progpow-sero, progpow-veil, pufferfish2
 - quark, quibit
-- renesis
-- sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, shandwich256, skein2, skunkhash, skydoge, sonoa
+- sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, shandwich256, skein2, skunkhash, skydoge
 - timetravel, tribus
 - vprogpow
-- wildkeccak
-- 0x10, x11, x11k, x12, x13, x14, x15, x16r, x16rv2, x16rt, x16s, x17, x17,r x18, x20r, x21s, x22i, x25x, x33, xevan
+- x11, x11k, x12, x13, x14, x15, x16r, x16rv2, x16rt, x16s, x17, x18, x20r, x21s, x22i, x25x, x33, xevan
 
 # DEV-FEE:
 - by default is 1%
 - lyra2TDC, megabtx, phi5, sha256csm, x17r and wildkeccak algorithms are 2%
-- minotaur is 5%
+- minotaur and nexapow is 5%
 
 # OPTIONS
 ```
@@ -104,6 +100,9 @@ Options:
       --no-sysfs                disable monitoring via sysfs
       --gpu-temp-limit N        set temperature at which gpu will stop mining(default: 85)
       --gpu-temp-resume N       set temperature at which gpu will resume mining(default: 60)
+      
+      --execute COMMAND         execute custom command before gpu initialization(e.g. \"nvidia-smi -lmc 810\")
+      --execute-wait N          wait for N seconds after executing the command (default: 1)
 
       --multiple-instance       allow multiple instances running at one time
       --user-agent AGENT        set custom user-agent string for pool
