@@ -79,11 +79,6 @@ Options:
       --strategy N              strategy of feeding videocards with job(default: 0)
       --split-job N             set amount of gpu's(or threads of it, keep this in mind) solving one job
 
-      --scratchpad-url URL      where miner can download scratchpad for wildkeccak algo 
-      --scratchpad-file FILE    where to save scratchpad(including file name)
-      --scratchpad-safe-update  use safe scratchpad update, can be useful for avoiding N/A on big rigs
-      --scratchpad-full-update  use full scratchpad update
-
       --opencl-platforms N      list of OpenCL platforms to use(also possible to set amd or nvidia; default: all)
   -d, --opencl-devices N        list of OpenCL devices to use(default: all)
       --opencl-threads N        amount of threads per OpenCL device(default: auto)
@@ -110,7 +105,6 @@ Options:
 
       --no-color                disable colored output
       --print-time N            print hashrate report every N seconds
-      --print-statistics        print additional statistics(not implemented yet)
       --print-debug             print debug information
 
       --api-port N              port for API
