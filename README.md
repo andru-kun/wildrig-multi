@@ -96,7 +96,8 @@ Options:
       --gpu-temp-limit N        set temperature at which gpu will stop mining(default: 85)
       --gpu-temp-resume N       set temperature at which gpu will resume mining(default: 60)
       
-      --execute COMMAND         execute custom command before gpu initialization(e.g. \"nvidia-smi -lmc 810\")
+      --execute-at-start COMMAND execute custom command before gpu initialization(e.g. \"nvidia-smi -lmc 810\")
+      --execute COMMAND          execute custom command after gpu initialization or precompute stage, etc.
       --execute-wait N          wait for N seconds after executing the command (default: 1)
 
       --multiple-instance       allow multiple instances running at one time
