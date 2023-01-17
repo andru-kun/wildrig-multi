@@ -16,6 +16,8 @@ multi algo miner for AMD & NVIDIA
 - **RDNA 2nd gen**: Radeon 6500XT, Radeon 6600XT, Radeon 6700 XT, Radeon 6800XT, Radeon 6900 XT
 - **RDNA 3nd gen**: Radeon 7700XT, 7800XT, 7900XTX/XT
 
+Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R7 265, R9 270, R9 280, R9 370, etc.) are not supported and won't be, because they are too old and need additional work.
+
 ## NVIDIA:
 - All gpu's with Compute Capabilities >=5.0 should work
 - also specific gpu can be supported via use of --ptx-version parameter(like --ptx-version 71 for sm_86, more ptx version is [here](https://docs.nvidia.com/cuda/parallel-thread-execution/#release-notes))
@@ -101,7 +103,6 @@ Options:
       --execute-wait N          wait for N seconds after executing the command (default: 1)
 
       --multiple-instance       allow multiple instances running at one time
-      --user-agent AGENT        set custom user-agent string for pool
   -l, --log-file FILE           log all output to a file
 
       --no-color                disable colored output
