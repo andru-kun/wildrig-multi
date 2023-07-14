@@ -33,7 +33,7 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 - heavyhash, hex, hmq1725
 - kawpow
 - lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
-- megabtx, minotaur
+- megabtx, memehash, memehashv2
 - nexapow, nist5
 - phi, phi5, progpowz, progpow-ethercore, progpow-sero, progpow-veil, pufferfish2
 - quark, quibit
