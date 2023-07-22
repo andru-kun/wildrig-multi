@@ -2,8 +2,6 @@
 multi algo miner for AMD & NVIDIA
 
 # KNOWN ISSUES
-- rejected shares on Vega gpu's for progpow family of algorithms if use kernel 2(kernel 1 works fine)
-- not all algorithms working on NVIDIA gpu's right now, and not all of them are optimized(see Release Notes)
 - any report is welcome! :)
 
 # SUPPORTED GPU's
