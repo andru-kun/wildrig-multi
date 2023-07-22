@@ -44,7 +44,7 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 
 # DEV-FEE:
 - by default is 1%
-- lyra2TDC, megabtx, phi5, sha256csm and nexapow algorithms are 2%
+- lyra2TDC, megabtx, memehashv2, phi5, sha256csm and nexapow algorithms are 2%
 
 # OPTIONS
 ```
