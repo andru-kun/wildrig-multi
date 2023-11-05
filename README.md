@@ -59,64 +59,72 @@ Usage: wildrig [OPTIONS]
 Options:
   -a, --algo ALGO               specify the hash algorithm to use
 
-      --benchmark               run offline benchmark
-      --benchmark-hashorder     run offline benchmark and/or set hash order for benchmark
-      --benchmark-epoch         run offline benchmark and/or set epoch for benchmark
-      --benchmark-block         run offline benchmark and/or set block for benchmark
-      --benchmark-timeout       run offline benchmark and/or set how long to run benchmark in seconds(default: 0)
+      --benchmark                run offline benchmark
+      --benchmark-hashorder      run offline benchmark and/or set hash order for benchmark
+      --benchmark-epoch          run offline benchmark and/or set epoch for benchmark
+      --benchmark-block          run offline benchmark and/or set block for benchmark
+      --benchmark-timeout        run offline benchmark and/or set how long to run benchmark in seconds(default: 0)
 
-  -o, --url URL                 URL of mining server
-      --proxy                   set ip:port to connect via SOCKS5 proxy
-  -O, --userpass U:P            username:password pair for mining server
-  -u, --user USERNAME           username for mining server
-  -p, --pass PASSWORD           password for mining server
-  -w, --worker WORKERNAME       worker name(progpow variants only)
-  -r, --retries N               number of times to retry before switch to backup server (default: 1)
-  -R, --retry-pause N           time to pause between retries (default: 5)
-      --max-rejects N           number of one by one rejects before switch to backup server (default: 5)
-      --max-difficulty N        maximum difficulty to accept from pool(unit: M), otherwise reconnect (default: 0)
+  -o, --url URL                  URL of mining server
+      --proxy                    set ip:port to connect via SOCKS5 proxy
+  -O, --userpass U:P             username:password pair for mining server
+  -u, --user USERNAME            username for mining server
+  -p, --pass PASSWORD            password for mining server
+  -w, --worker WORKERNAME        worker name(progpow variants only)
+  -r, --retries N                number of times to retry before switch to backup server (default: 1)
+  -R, --retry-pause N            time to pause between retries (default: 5)
+      --max-rejects N            number of one by one rejects before switch to backup server (default: 5)
+      --max-difficulty N         maximum difficulty to accept from pool(unit: M), otherwise reconnect (default: 0)
 
-      --send-stale              send stale shares
-      --diff-factor N           difficulty factor to use instead of algo default(default: 0)
-      --no-extranonce           disable exranonce subscription
-      --protocol PROTOCOL       set stratum protocol(ethproxy, ethstratum, stratum, stratum1, stratum2, ufo, ufo2)
+      --send-stale               send stale shares
+      --diff-factor N            difficulty factor to use instead of algo default(default: 0)
+      --no-extranonce            disable exranonce subscription
+      --protocol PROTOCOL        set stratum protocol(ethproxy, ethstratum, stratum, stratum1, stratum2)
 
-      --watchdog                enable checking how long videocards are running OpenCL kernel(terminate if more than 30 sec.)
-      --watchdog-script FILE    set file to execute when watchdog triggers(can be used without --watchdog parameter)
-      --strategy N              strategy of feeding videocards with job(default: 0)
-      --split-job N             set amount of gpu's(or threads of it, keep this in mind) solving one job
+      --watchdog                 enable checking how long videocards are running OpenCL kernel(terminate if more than 30 sec.)
+      --watchdog-script FILE     set file to execute when watchdog triggers(can be used without --watchdog parameter)
+      --strategy N               strategy of feeding videocards with job(default: 0)
+      --split-job N              set amount of gpu's(or threads of it, keep this in mind) solving one job
 
-      --opencl-platforms N      list of OpenCL platforms to use(also possible to set amd or nvidia; default: all)
-  -d, --opencl-devices N        list of OpenCL devices to use(default: all)
-      --opencl-threads N        amount of threads per OpenCL device(default: auto)
-      --opencl-launch IxW       list of launch config, intensity and worksize(default: auto)
-      --opencl-affinity N       affine GPU threads to a CPU
-      --ptx-version N           specify what PTX ISA version to use(numbers should be without dot, e.g. 50, 63, 70 and so on)
-      --progpow-kernel          depends on drivers values 1 or 2 can provide better hashrate for ProgPow(default: 0)
-      --no-dag-split            disable splitting DAG on two parts(have sense only if AMD fix this problem in their drivers)
-      --print-platforms         print available OpenCL platforms and exit
-      --print-devices           print available OpenCL devices and exit
+      --opencl-platforms N       list of OpenCL platforms to use(also possible to set amd or nvidia; default: all)
+  -d, --opencl-devices N         list of OpenCL devices to use(default: all)
+      --opencl-threads N         amount of threads per OpenCL device(default: auto)
+  -i, --opencl-launch IxW        list of launch config, intensity and worksize(default: auto)
+      --opencl-affinity N        affine GPU threads to a CPU
+      --ptx-version N            specify what PTX ISA version to use(numbers should be without dot, e.g. 50, 63, 70 and so on)
+      --progpow-kernel           depends on drivers values 1 or 2 can provide better hashrate for ProgPow(default: 0)
+      --no-dag-split             disable splitting DAG on two parts(have sense only if AMD fix this problem in their drivers)
+      --print-platforms          print available OpenCL platforms and exit
+      --print-devices            print available OpenCL devices and exit
 
-      --no-adl                  disable monitoring via ADL
-      --no-nvml                 disable monitoring via NVML
-      --no-sysfs                disable monitoring via sysfs
-      --gpu-temp-limit N        set temperature at which gpu will stop mining(default: 85)
-      --gpu-temp-resume N       set temperature at which gpu will resume mining(default: 60)
-      
-      --execute-at-start COMMAND execute custom command before gpu initialization(e.g. \"nvidia-smi -lmc 810\")
+      --no-adl                   disable monitoring via ADL
+      --no-igcl                  disable monitoring via IGCL
+      --no-nvml                  disable monitoring via NVML
+      --no-sysfs                 disable monitoring via sysfs
+      --gpu-temp-limit N         set temperature at which gpu will stop mining(default: 85)
+      --gpu-temp-resume N        set temperature at which gpu will resume mining(default: 60)
+
+  Parameters below can be set for a list of GPU's, use comma to separate them and * to skip
+      --gpu-core-clock N         lock GPU core clock to a specific value
+      --gpu-core-offset N        set offset value for GPU core clock
+      --gpu-memory-clock N       lock GPU memory clock to a specific value
+      --gpu-memory-offset N      set offset value for GPU memory clock
+      --gpu-powerlimit N         set power limit for GPU
+
+      --execute-at-start COMMAND execute custom command before gpu initialization
       --execute COMMAND          execute custom command after gpu initialization or precompute stage, etc.
-      --execute-wait N          wait for N seconds after executing the command (default: 1)
+      --execute-wait N           wait for N seconds after executing the command (default: 1)
 
-      --multiple-instance       allow multiple instances running at one time
-  -l, --log-file FILE           log all output to a file
+      --multiple-instance        allow multiple instances running at one time
+  -l, --log-file FILE            log all output to a file
 
-      --no-color                disable colored output
-      --print-time N            print hashrate report every N seconds
-      --print-debug             print debug information
+      --no-color                 disable colored output
+      --print-time N             print hashrate report every N seconds
+      --print-debug              print debug information
 
-      --api-port N              port for API
-      --api-worker-id ID        custom worker-id for API
+      --api-port N               port for API
+      --api-worker-id ID         custom worker-id for API
 
-  -h, --help                    display this help and exit
-  -V, --version                 output version information and exit
+  -h, --help                     display this help and exit
+  -V, --version                  output version information and exit
 ```
