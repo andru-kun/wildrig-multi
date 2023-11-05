@@ -1,5 +1,5 @@
 # WildRig Multi
-multi algo miner for AMD & NVIDIA
+multi algo miner for AMD, NVIDIA and Intel gpu's
 
 # KNOWN ISSUES
 - **heavyhash** is not suported on Intel GPU's
