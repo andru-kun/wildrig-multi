@@ -20,6 +20,11 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 - All gpu's with Compute Capabilities >=5.0 should work
 - also specific gpu can be supported via use of --ptx-version parameter(like --ptx-version 71 for sm_86, more ptx version is [here](https://docs.nvidia.com/cuda/parallel-thread-execution/#release-notes))
 
+## INTEL:
+- **Intel Arc**: A310, A350M, A370M, A380, A530M, A550M, A570M, A580, A730M, A750, A770M, A770
+- **Intel Arc Pro**: A30M, A40/A50, A60M, A60
+- **Intel Data Center GPU**: Flex 140, Flex 170
+
 # SUPPORTED ALGORITHMS
 - aergo, anime
 - bcd, bitcore, blake2b-btcc, blake2b-glt, blake2s, blake3, bmw512
