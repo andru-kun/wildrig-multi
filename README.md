@@ -105,11 +105,11 @@ Options:
       --gpu-temp-resume N        set temperature at which gpu will resume mining(default: 60)
 
   Parameters below can be set for a list of GPU's, use comma to separate them and * to skip
-      --gpu-core-clock N         lock GPU core clock to a specific value
-      --gpu-core-offset N        set offset value for GPU core clock
-      --gpu-memory-clock N       lock GPU memory clock to a specific value
-      --gpu-memory-offset N      set offset value for GPU memory clock
-      --gpu-powerlimit N         set power limit for GPU
+      --gpu-core-clock N         lock GPU core clock to N
+      --gpu-core-offset N        set offset N for GPU core clock
+      --gpu-memory-clock N       lock GPU memory clock to N
+      --gpu-memory-offset N      set offset N for GPU memory clock
+      --gpu-powerlimit N         set power limit for GPU to N
 
       --execute-at-start COMMAND execute custom command before gpu initialization
       --execute COMMAND          execute custom command after gpu initialization or precompute stage, etc.
