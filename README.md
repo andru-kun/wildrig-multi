@@ -11,13 +11,13 @@ multi algo miner for AMD, NVIDIA and Intel gpu's
 
 # SUPPORTED GPU's
 ## AMD:
-- **GCN 2nd gen**: R7 260, R9 290, R9 295X2, R7 360, R9 390
-- **GCN 3rd gen**: R9 285, R9 380, R9 Fury, R9 Nano
-- **GCN 4th gen**: RX460, RX470, RX480, RX550, RX560, RX570, RX580, RX590
-- **GCN 5th gen**: Vega 11, Vega 56, Vega 64, Radeon VII
-- **RDNA 1st gen**: Radeon 5500XT, Radeon 5600XT, Radeon 5700, Radeon 5700XT
-- **RDNA 2nd gen**: Radeon 6500XT, Radeon 6600XT, Radeon 6700 XT, Radeon 6800XT, Radeon 6900 XT
-- **RDNA 3nd gen**: Radeon 7700XT, 7800XT, 7900XTX/XT
+- **GCN 2nd gen**: Radeon R7 260, R9 290, R9 295X2, R7 360, R9 390
+- **GCN 3rd gen**: Radeon R9 285, R9 380, R9 Fury, R9 Nano
+- **GCN 4th gen**: Radeon RX 460, 470, 480, 550, 560, 570, 580, 590
+- **GCN 5th gen**: Radeon Vega 56, Vega 64, Vega FE, Radeon VII
+- **RDNA 1st gen**: Radeon RX 5500XT, 5600XT, 5700, 5700XT
+- **RDNA 2nd gen**: Radeon RX 6500XT, Radeon 6600XT, 6700 XT, 6750 XT, 6800XT, 6900 XT
+- **RDNA 3nd gen**: Radeon RX 7700XT, 7800XT, 7900XTX/XT
 
 Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R7 265, R9 270, R9 280, R9 370, etc.) are not supported and won't be, because they are too old and need additional work.
 
