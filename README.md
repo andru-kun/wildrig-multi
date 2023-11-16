@@ -45,6 +45,7 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 - nexapow, nist5
 - phi, phi5, progpowz, progpow-ethercore, progpow-sero, progpow-veil, pufferfish2
 - quark, quibit
+- rwahash
 - sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, shandwich256, skein2, skunkhash, skydoge
 - timetravel, tribus
 - vprogpow
@@ -52,7 +53,7 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 
 # DEV-FEE:
 - by default is 1%
-- lyra2TDC, megabtx, memehashv2, phi5, sha256csm and nexapow algorithms are 2%
+- lyra2TDC, megabtx, memehashv2, phi5, rwahash, sha256csm and nexapow algorithms are 2%
 
 # OPTIONS
 ```
