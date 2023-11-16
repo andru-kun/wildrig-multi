@@ -4,7 +4,6 @@ multi algo miner for AMD, NVIDIA and Intel gpu's
 [Discord community](https://discord.gg/9pR7WMkt)
 
 # KNOWN ISSUES
-- **heavyhash** is not suported on Intel GPU's
 - **nexapow** is not supported on AMD gpu's with pre-RDNA architecture
 - **x22i, x25x** is not suported on NVIDIA GPU's
 - any report is welcome! :)
