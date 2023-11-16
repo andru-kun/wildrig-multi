@@ -52,8 +52,25 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 - x11, x11k, x12, x13, x14, x15, x16r, x16rv2, x16rt, x16s, x17, x18, x20r, x21s, x22i, x25x, x33, xevan
 
 # DEV-FEE:
-- by default is 1%
-- lyra2TDC, megabtx, memehashv2, phi5, rwahash, sha256csm and nexapow algorithms are 2%
+- **0.75%**:
+  - evrprogpow
+  - firopow
+  - heavyhash
+  - kawpow
+  - nexapow
+  - progpowz
+  - sha512256d
+  - skein2
+  - and all other non-listed below algorithms
+- **1.00%**:
+  - curvehash
+  - ghostrider
+  - mike
+  - pufferfish2
+- **2.00%**:
+  - rwahash
+  - sha256csm
+  - skydoge
 
 # OPTIONS
 ```
