@@ -40,7 +40,7 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 - heavyhash, hex, hmq1725
 - kawpow
 - lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
-- megabtx
+- megabtx, memehash
 - nexapow, nist5
 - phi, phi5, progpowz, progpow-ethercore, progpow-sero, progpow-veil, pufferfish2
 - quark, quibit
@@ -56,6 +56,7 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
   - firopow
   - heavyhash
   - kawpow
+  - memehash
   - nexapow
   - progpowz
   - sha512256d
@@ -129,6 +130,15 @@ Options:
       --gpu-memory-clock N       lock GPU memory clock to N
       --gpu-memory-offset N      set offset N for GPU memory clock
       --gpu-powerlimit N         set power limit for GPU to N
+
+      --zil-another-miner        pause mining during ZIL PoW Window so another miner can mine ZIL
+
+      --zil-core-clock N         lock GPU core clock to N when ZIL PoW Window starts
+      --zil-core-offset N        set offset N for GPU core clock when ZIL PoW Window starts
+      --zil-memory-clock N       lock GPU memory clock to N when ZIL PoW Window starts
+      --zil-memory-offset N      set offset N for GPU memory clock when ZIL PoW Window starts
+      --zil-powerlimit N         set power limit for GPU to N when ZIL PoW Window starts
+      --zil-fan-speed N          set fan speed for GPU to N when ZIL PoW Window starts
 
       --execute-at-start COMMAND execute custom command before gpu initialization
       --execute COMMAND          execute custom command after gpu initialization or precompute stage, etc.
