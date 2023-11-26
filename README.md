@@ -4,7 +4,7 @@ multi algo miner for AMD, NVIDIA and Intel gpu's
 [Discord community](https://discord.gg/9pR7WMkt)
 
 # KNOWN ISSUES
-- rejects on **kawpow** and other **progpow**s  after few coins switches on pools like zergpool and zpool
+- rejects on **kawpow** and other **progpow**s  after few coin switches on pools like zergpool and zpool
 - **nexapow** is not supported on AMD gpu's with pre-RDNA architecture
 - **x22i, x25x** is not suported on NVIDIA GPU's
 - any report is welcome! :)
