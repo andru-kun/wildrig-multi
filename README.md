@@ -1,7 +1,7 @@
 # WildRig Multi
 multi algo miner for AMD, NVIDIA and Intel gpu's
 
-[Discord community](https://discord.gg/9pR7WMkt)
+[Discord community]([https://discord.gg/9pR7WMkt](https://discord.gg/ZGDaQ6edXb))
 
 # KNOWN ISSUES
 - **nexapow** is not supported on AMD gpu's with pre-RDNA architecture
