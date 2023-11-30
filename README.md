@@ -21,8 +21,7 @@ multi algo miner for AMD, NVIDIA and Intel gpu's
 Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R7 265, R9 270, R9 280, R9 370, etc.) are not supported and won't be, because they are too old and need additional work.
 
 ## NVIDIA:
-- All gpu's with Compute Capabilities >=5.0 should work
-- also specific gpu can be supported via use of --ptx-version parameter(like --ptx-version 71 for sm_86, more ptx version is [here](https://docs.nvidia.com/cuda/parallel-thread-execution/#release-notes))
+- All gpu's with Compute Capabilities >=5.0 should work using drivers 452.39+ on Windows and 450.80.02+ on Linux
 
 ## INTEL:
 - **Intel Arc**: A310, A350M, A370M, A380, A530M, A550M, A570M, A580, A730M, A750, A770M, A770
