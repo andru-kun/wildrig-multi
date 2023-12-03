@@ -5,7 +5,6 @@ multi algo miner for AMD, NVIDIA and Intel gpu's
 
 # KNOWN ISSUES
 - **nexapow** is not supported on AMD gpu's with pre-RDNA architecture
-- **x22i, x25x** is not suported on NVIDIA GPU's
 - any report is welcome! :)
 
 # SUPPORTED GPU's
