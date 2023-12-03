@@ -76,6 +76,83 @@ Usage: wildrig [OPTIONS]
 
 Options:
   -a, --algo ALGO               specify the hash algorithm to use
+             aergo
+             anime
+             bcd
+             bitcore
+             blake2b-btcc
+             blake2b-glt
+             blake2s(ASIC mineable)             blake3
+             bmw512
+             c11
+             curvehash
+             dedal
+             evrprogpow
+             firopow
+             ghostrider
+             glt-astralhash
+             glt-globalhash
+             glt-hex
+             glt-jeonghash
+             glt-padihash
+             glt-pawelhash
+             heavyhash
+             hex
+             hmq1725
+             kawpow
+             lyra2tdc
+             lyra2v2(ASIC mineable)
+             lyra2v3
+             lyra2vc0ban
+             megabtx
+             memehash
+             mike
+             nexapow
+             nist5(ASIC mineable)
+             phi
+             phi5
+             progpow-ethercore
+             progpow-sero
+             progpow-quai
+             progpow-veil
+             progpowz
+             quark(ASIC mineable)
+             quibit(ASIC mineable)
+             rwahash
+             sha256(ASIC mineable)
+             sha256d(ASIC mineable)
+             sha256q
+             sha256t
+             sha256csm
+             sha512256d
+             shandwich256
+             skein2
+             skunkhash
+             skydoge
+             timetravel
+             timetravel10
+             tribus
+             vprogpow
+             x11(ASIC mineable)
+             x11gost(ASIC mineable)
+             x11k
+             x12(ASIC mineable)
+             x13(ASIC mineable)
+             x14(ASIC mineable)
+             x15(ASIC mineable)
+             x16r
+             x16rv2
+             x16rt
+             x16s
+             x17
+             x18
+             x20r
+             x21s
+             x22
+             x22i
+             x25x
+             x33
+             xevan
 
       --benchmark                run offline benchmark
       --benchmark-hashorder      run offline benchmark and/or set hash order for benchmark
@@ -123,14 +200,17 @@ Options:
       --gpu-temp-resume N        set temperature at which gpu will resume mining(default: 60)
 
   Parameters below can be set for a list of GPU's, use comma to separate them and * to skip
+      --gpu-reset-oc             reset gpu overclock settings on start or when ZIL PoW Window ends
       --gpu-core-clock N         lock GPU core clock to N
       --gpu-core-offset N        set offset N for GPU core clock
       --gpu-memory-clock N       lock GPU memory clock to N
       --gpu-memory-offset N      set offset N for GPU memory clock
       --gpu-powerlimit N         set power limit for GPU to N
+      --gpu-fan-speed N          set fan speed for GPU to N
 
       --zil-another-miner        pause mining during ZIL PoW Window so another miner can mine ZIL
 
+      --zil-reset-oc             reset gpu overclock settings when ZIL PoW Window starts
       --zil-core-clock N         lock GPU core clock to N when ZIL PoW Window starts
       --zil-core-offset N        set offset N for GPU core clock when ZIL PoW Window starts
       --zil-memory-clock N       lock GPU memory clock to N when ZIL PoW Window starts
@@ -138,9 +218,9 @@ Options:
       --zil-powerlimit N         set power limit for GPU to N when ZIL PoW Window starts
       --zil-fan-speed N          set fan speed for GPU to N when ZIL PoW Window starts
 
-      --execute-at-start COMMAND execute custom command before gpu initialization
-      --execute COMMAND          execute custom command after gpu initialization or precompute stage, etc.
-      --execute-wait N           wait for N seconds after executing the command (default: 1)
+      --execute-at-start SCRIPT  execute custom script before gpu initialization
+      --execute SCRIPT           execute custom script after gpu initialization or precompute stage, etc.
+      --execute-wait N           wait for N seconds after executing the script (default: 1)
 
       --multiple-instance        allow multiple instances running at one time
   -l, --log-file FILE            log all output to a file
