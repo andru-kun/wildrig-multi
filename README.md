@@ -73,85 +73,10 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 ```
 Usage: wildrig [OPTIONS]
 
+  Some parameters can be set per gpu, use comma to separate each gpu and * to skip
+
 Options:
   -a, --algo ALGO               specify the hash algorithm to use
-             aergo
-             anime
-             bcd
-             bitcore
-             blake2b-btcc
-             blake2b-glt
-             blake2s(ASIC mineable)             blake3
-             bmw512
-             c11
-             curvehash
-             dedal
-             evrprogpow
-             firopow
-             ghostrider
-             glt-astralhash
-             glt-globalhash
-             glt-hex
-             glt-jeonghash
-             glt-padihash
-             glt-pawelhash
-             heavyhash
-             hex
-             hmq1725
-             kawpow
-             lyra2tdc
-             lyra2v2(ASIC mineable)
-             lyra2v3
-             lyra2vc0ban
-             megabtx
-             memehash
-             mike
-             nexapow
-             nist5(ASIC mineable)
-             phi
-             phi5
-             progpow-ethercore
-             progpow-sero
-             progpow-quai
-             progpow-veil
-             progpowz
-             quark(ASIC mineable)
-             quibit(ASIC mineable)
-             rwahash
-             sha256(ASIC mineable)
-             sha256d(ASIC mineable)
-             sha256q
-             sha256t
-             sha256csm
-             sha512256d
-             shandwich256
-             skein2
-             skunkhash
-             skydoge
-             timetravel
-             timetravel10
-             tribus
-             vprogpow
-             x11(ASIC mineable)
-             x11gost(ASIC mineable)
-             x11k
-             x12(ASIC mineable)
-             x13(ASIC mineable)
-             x14(ASIC mineable)
-             x15(ASIC mineable)
-             x16r
-             x16rv2
-             x16rt
-             x16s
-             x17
-             x18
-             x20r
-             x21s
-             x22
-             x22i
-             x25x
-             x33
-             xevan
 
       --benchmark                run offline benchmark
       --benchmark-hashorder      run offline benchmark and/or set hash order for benchmark
@@ -176,15 +101,12 @@ Options:
       --protocol PROTOCOL        set stratum protocol(ethproxy, ethstratum, stratum, stratum1, stratum2)
 
       --watchdog                 enable checking how long videocards are running OpenCL kernel(terminate if more than 30 sec.)
-      --watchdog-script FILE     set file to execute when watchdog triggers(can be used without --watchdog parameter)
+      --watchdog-script FILE     file to execute when watchdog triggers(can be used without --watchdog parameter)
       --strategy N               strategy of feeding videocards with job(default: 0)
-      --split-job N              set amount of gpu's(or threads of it, keep this in mind) solving one job
+      --split-job N              amount of gpu's(or threads of it, keep this in mind) solving one job
 
-      --opencl-platforms N       list of OpenCL platforms to use(also possible to set amd or nvidia; default: all)
-  -d, --opencl-devices N         list of OpenCL devices to use(default: all)
-      --opencl-threads N         amount of threads per OpenCL device(default: auto)
-  -i, --opencl-launch IxW        list of launch config, intensity and worksize(default: auto)
-      --opencl-affinity N        affine GPU threads to a CPU
+      --opencl-platforms LIST    list of OpenCL platforms to use(amd, nvidia or intel; default: all)
+  -d, --opencl-devices LIST      list of OpenCL devices to use(default: all)
       --ptx-version N            specify what PTX ISA version to use(numbers should be without dot, e.g. 50, 63, 70 and so on)
       --progpow-kernel           depends on drivers values 1 or 2 can provide better hashrate for ProgPow(default: 0)
       --no-dag-split             disable splitting DAG on two parts(have sense only if AMD fix this problem in their drivers)
@@ -195,11 +117,15 @@ Options:
       --no-igcl                  disable monitoring via IGCL
       --no-nvml                  disable monitoring via NVML
       --no-sysfs                 disable monitoring via sysfs
+
+      --gpu-threads N            set amount of threads per gpu(default: auto)
+      --gpu-affinity N           affine GPU threads to a specific CPU thread
+  -i, --gpu-intensity N          set intensity per gpu(default: auto)
+
       --gpu-temp-limit N         set temperature at which gpu will stop mining(default: 85)
       --gpu-temp-resume N        set temperature at which gpu will resume mining(default: 60)
 
-  Parameters below can be set for a list of GPU's, use comma to separate them and * to skip
-      --gpu-reset-oc             reset gpu overclock settings on start or when ZIL PoW Window ends
+	  --gpu-reset-oc             reset gpu overclock settings on start or when ZIL PoW Window ends
       --gpu-core-clock N         lock GPU core clock to N
       --gpu-core-offset N        set offset N for GPU core clock
       --gpu-memory-clock N       lock GPU memory clock to N
@@ -217,8 +143,8 @@ Options:
       --zil-powerlimit N         set power limit for GPU to N when ZIL PoW Window starts
       --zil-fan-speed N          set fan speed for GPU to N when ZIL PoW Window starts
 
-      --execute-at-start SCRIPT  execute custom script before gpu initialization
-      --execute SCRIPT           execute custom script after gpu initialization or precompute stage, etc.
+      --execute-at-start FILE    execute custom script before gpu initialization
+      --execute FILE             execute custom script after gpu initialization or precompute stage, etc.
       --execute-wait N           wait for N seconds after executing the script (default: 1)
 
       --multiple-instance        allow multiple instances running at one time
