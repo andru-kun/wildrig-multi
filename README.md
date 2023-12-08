@@ -125,7 +125,7 @@ Options:
       --gpu-temp-limit N         set temperature at which gpu will stop mining(default: 85)
       --gpu-temp-resume N        set temperature at which gpu will resume mining(default: 60)
 
-	  --gpu-reset-oc             reset gpu overclock settings on start or when ZIL PoW Window ends
+      --gpu-reset-oc             reset gpu overclock settings on start or when ZIL PoW Window ends
       --gpu-core-clock N         lock GPU core clock to N
       --gpu-core-offset N        set offset N for GPU core clock
       --gpu-memory-clock N       lock GPU memory clock to N
