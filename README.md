@@ -107,7 +107,6 @@ Options:
 
       --opencl-platforms LIST    list of OpenCL platforms to use(amd, nvidia or intel; default: all)
   -d, --opencl-devices LIST      list of OpenCL devices to use(default: all)
-      --ptx-version N            specify what PTX ISA version to use(numbers should be without dot, e.g. 50, 63, 70 and so on)
       --progpow-kernel           depends on drivers values 1 or 2 can provide better hashrate for ProgPow(default: 0)
       --no-dag-split             disable splitting DAG on two parts(have sense only if AMD fix this problem in their drivers)
       --print-platforms          print available OpenCL platforms and exit
