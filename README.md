@@ -77,7 +77,6 @@ Usage: wildrig [OPTIONS]
 
 Options:
   -a, --algo ALGO               specify the hash algorithm to use
-
       --benchmark                run offline benchmark
       --benchmark-hashorder      run offline benchmark and/or set hash order for benchmark
       --benchmark-epoch          run offline benchmark and/or set epoch for benchmark
@@ -107,6 +106,7 @@ Options:
 
       --opencl-platforms LIST    list of OpenCL platforms to use(amd, nvidia or intel; default: all)
   -d, --opencl-devices LIST      list of OpenCL devices to use(default: all)
+      --force-eff-mode           force to use efficient kernels when possible(e.g. memehash, skydoge)
       --progpow-kernel           depends on drivers values 1 or 2 can provide better hashrate for ProgPow(default: 0)
       --no-dag-split             disable splitting DAG on two parts(have sense only if AMD fix this problem in their drivers)
       --print-platforms          print available OpenCL platforms and exit
