@@ -68,6 +68,8 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
   - rwahash
   - sha256csm
   - skydoge
+- **5.00%**:
+  - x7
 
 # OPTIONS
 ```
