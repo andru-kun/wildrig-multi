@@ -23,8 +23,9 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 - All gpu's with Compute Capabilities >=5.0 should work using drivers 452.39+ on Windows and 450.80.02+ on Linux
 
 ## INTEL:
-- **Intel Arc**: A310, A350M, A370M, A380, A530M, A550M, A570M, A580, A730M, A750, A770M, A770
-- **Intel Arc Pro**: A30M, A40/A50, A60M, A60
+- **Intel Arc Alchemist**: A310, A350M, A370M, A380, A530M, A550M, A570M, A580, A730M, A750, A770M, A770
+- **Intel Arc Alchemist Pro**: A30M, A40/A50, A60M, A60
+- **Intel Arc Battlemage**: B570, B580
 - **Intel Data Center GPU**: Flex 140, Flex 170
 
 # SUPPORTED ALGORITHMS
