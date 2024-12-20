@@ -30,20 +30,18 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 
 # SUPPORTED ALGORITHMS
 - aergo, anime
-- bcd, bitcore, blake2b-btcc, blake2b-glt, blake2s, blake3, bmw512
+- bcd, bitcore, blake2s, bmw512
 - c11, curvehash
-- dedal
 - evrprogpow
 - firopow
-- geek, ghostrider, glt-astralhash, glt-globalhash, glt-jeonghash, glt-padihash, glt-pawelhash
+- ghostrider
 - heavyhash, hex, hmq1725
 - kawpow
-- lyra2tdc, lyra2v2, lyra2v3, lyra2vc0ban
+- lyra2v2
 - megabtx, memehash, meowpow
 - nexapow, nist5
-- phi, phi5, phihash, progpowz, progpow-ethercore, progpow-sero, progpow-telestai, progpow-veil
+- phi, phihash, progpowz, progpow-ethercore, progpow-sero, progpow-telestai, progpow-veil
 - quark, quibit
-- rwahash
 - sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, shandwich256, skein2, skunkhash, skydoge
 - timetravel, tribus
 - vprogpow
