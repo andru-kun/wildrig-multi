@@ -40,8 +40,8 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 - lyra2v2
 - megabtx, memehash, meowpow
 - nexapow, nist5
-- phi, phihash, progpowz, progpow-ethercore, progpow-sero, progpow-telestai, progpow-veil
-- quark, quibit
+- phi, phihash, progpowz, progpow-ethercore, progpow-sero, progpow-telestai, progpow-quai, progpow-veil
+- quark, qubit
 - sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, shandwich256, skein2, skunkhash, skydoge
 - timetravel, tribus
 - vprogpow
