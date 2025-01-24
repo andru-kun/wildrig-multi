@@ -20,7 +20,15 @@ multi algo miner for AMD, NVIDIA and Intel gpu's
 Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R7 265, R9 270, R9 280, R9 370, etc.) are not supported and won't be, because they are too old and need additional work.
 
 ## NVIDIA:
-- All gpu's with Compute Capabilities >=5.0 should work using drivers 452.39+ on Windows and 450.80.02+ on Linux
+- **Maxwell**: GTX 750, GTX 9x0 series, Titan X, Tesla M-series
+- **Pascal**: GTX 10x0 series, 1080, Titan X, Tesla P-series, P106-090, P106-100, P104-100, P104-101, P102-100, P102-101
+- **Volta**: Tesla V-series, CMP 100HX-210
+- **Turing**: GTX 16x0 series, RTX 20x0 series, Tesla T-series, Quadro Turing, CMP 30HX, CMP 40HX, CMP 50HX
+- **Ampere**: RTX 30x0 series, Quadro Ampere, CMP 70HX, CMP 90HX, CMP 170HX
+- **Ada Lovelace**: RTX 40x0 series, Quadro Ada
+- **Blackwell**: RTX 50x0 series
+
+Minimum driver versio is 452.39+ on Windows and 450.80.02+ on Linux. Supported list of gpu's is much longer, but not all of them have default intensity value, so use parameter *--gpu-instensity* to get better hashrate
 
 ## INTEL:
 - **Intel Arc Alchemist**: A310(E), A350(M,E), A370(M,E), A380(E), A530M, A550M, A570M, A580(E), A730M, A750(E), A770(M)
