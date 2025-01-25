@@ -21,7 +21,7 @@ Pitcairn, Tahiti and other old cards of **GCN 1st gen**(like HD 78x0, HD 79x0, R
 
 ## NVIDIA:
 - **Maxwell**: GTX 750, GTX 9x0 series, Titan X, Tesla M-series
-- **Pascal**: GTX 10x0 series, 1080, Titan X, Tesla P-series, P106-090, P106-100, P104-100, P104-101, P102-100, P102-101
+- **Pascal**: GTX 10x0 series, Titan Xp, Tesla P-series, P106-090, P106-100, P104-100, P104-101, P102-100, P102-101
 - **Volta**: Tesla V-series, CMP 100HX-210
 - **Turing**: GTX 16x0 series, RTX 20x0 series, Tesla T-series, Quadro Turing, CMP 30HX, CMP 40HX, CMP 50HX
 - **Ampere**: RTX 30x0 series, Quadro Ampere, CMP 70HX, CMP 90HX, CMP 170HX
