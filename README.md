@@ -132,23 +132,13 @@ Options:
       --gpu-temp-limit N         set temperature at which gpu will stop mining(default: 85)
       --gpu-temp-resume N        set temperature at which gpu will resume mining(default: 60)
 
-      --gpu-reset-oc             reset gpu overclock settings on start or when ZIL PoW Window ends
+      --gpu-reset-oc             reset gpu overclock settings on start
       --gpu-core-clock N         lock GPU core clock to N
       --gpu-core-offset N        set offset N for GPU core clock
       --gpu-memory-clock N       lock GPU memory clock to N
       --gpu-memory-offset N      set offset N for GPU memory clock
       --gpu-powerlimit N         set power limit for GPU to N
       --gpu-fan-speed N          set fan speed for GPU to N
-
-      --zil-another-miner        pause mining during ZIL PoW Window so another miner can mine ZIL
-
-      --zil-reset-oc             reset gpu overclock settings when ZIL PoW Window starts
-      --zil-core-clock N         lock GPU core clock to N when ZIL PoW Window starts
-      --zil-core-offset N        set offset N for GPU core clock when ZIL PoW Window starts
-      --zil-memory-clock N       lock GPU memory clock to N when ZIL PoW Window starts
-      --zil-memory-offset N      set offset N for GPU memory clock when ZIL PoW Window starts
-      --zil-powerlimit N         set power limit for GPU to N when ZIL PoW Window starts
-      --zil-fan-speed N          set fan speed for GPU to N when ZIL PoW Window starts
 
       --execute-at-start FILE    execute custom script before gpu initialization
       --execute FILE             execute custom script after gpu initialization or precompute stage, etc.
