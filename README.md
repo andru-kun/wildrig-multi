@@ -40,7 +40,7 @@ Minimum driver versio is 452.39+ on Windows and 450.80.02+ on Linux. Supported l
 # SUPPORTED ALGORITHMS
 - anime
 - bitcore, blake2s, bmw512
-- c11, curvehash
+- c11, clchash, curvehash
 - evrprogpow
 - firopow
 - ghostrider
@@ -76,6 +76,8 @@ Minimum driver versio is 452.39+ on Windows and 450.80.02+ on Linux. Supported l
 - **2.00%**:
   - sha256csm
   - skydoge
+- **3.00%**:
+  - clchash
 
 # OPTIONS
 ```
