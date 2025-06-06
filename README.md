@@ -5,6 +5,7 @@ multi algo miner for AMD, NVIDIA and Intel gpu's
 
 # KNOWN ISSUES
 - **nexapow** is not supported on AMD gpu's with pre-RDNA architecture
+- **evohash** and some other x-like algorithms produce incorrect shares on NVIDIA Blackwell gpu's
 - any report is welcome! :)
 
 # SUPPORTED GPU's
@@ -41,7 +42,7 @@ Minimum driver versio is 452.39+ on Windows and 450.80.02+ on Linux. Supported l
 - anime
 - bitcore, blake2s, bmw512
 - c11, clchash, curvehash
-- evrprogpow
+- evohash, evrprogpow
 - firopow
 - ghostrider
 - heavyhash, hex, hmq1725
@@ -57,24 +58,27 @@ Minimum driver versio is 452.39+ on Windows and 450.80.02+ on Linux. Supported l
 - x11, x11k, x12, x13, x14, x15, x16r, x16rv2, x16rt, x16s, x17, x18, x20r, x21s, x22i, x25x, x33
 
 # DEV-FEE:
+
+All algorithms are zero fee except listed below.
+
 - **0.75%**:
   - evrprogpow
   - firopow
-  - heavyhash
   - kawpow
-  - memehash
   - meowpow
-  - nexapow
+  - progpow-quai
+  - phihash
+  - progpow-sero
+  - progpow-telestai
+  - progpow-veil
+  - progpow-veriblock
   - progpowz
-  - sha512256d
-  - skein2
-  - and all other non-listed below algorithms
+  - nexapow
 - **1.00%**:
   - curvehash
   - ghostrider
   - mike
 - **2.00%**:
-  - sha256csm
   - skydoge
 - **3.00%**:
   - clchash
