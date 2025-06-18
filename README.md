@@ -42,7 +42,7 @@ Minimum driver versio is 452.39+ on Windows and 450.80.02+ on Linux. Supported l
 - anime
 - bitcore, blake2s, bmw512
 - c11, clchash, curvehash
-- evohash, evrprogpow
+- evrprogpow
 - firopow
 - ghostrider
 - heavyhash, hex, hmq1725
