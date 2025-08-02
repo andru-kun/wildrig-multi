@@ -41,7 +41,7 @@ Minimum driver versio is 452.39+ on Windows and 450.80.02+ on Linux. Supported l
 # SUPPORTED ALGORITHMS
 - anime
 - bitcore, blake2s, bmw512
-- c11, clchash, curvehash
+- c11, curvehash
 - evrprogpow
 - firopow
 - ghostrider
@@ -51,7 +51,7 @@ Minimum driver versio is 452.39+ on Windows and 450.80.02+ on Linux. Supported l
 - megabtx, memehash, meowpow
 - nexapow, nist5
 - phi, phihash, progpowz, progpow-ethercore, progpow-sero, progpow-telestai, progpow-quai, progpow-veil
-- quark, qubit
+- qhash, quark, qubit
 - sha256, sha256csm, sha256d, sha256q, sha256t, sha512256d, shandwich256, skein2, skunkhash, skydoge
 - timetravel, tribus
 - vprogpow
@@ -80,8 +80,8 @@ All algorithms are zero fee except listed below.
   - mike
 - **2.00%**:
   - skydoge
-- **3.00%**:
-  - clchash
+- **5.00%**:
+  - qhash
 
 # OPTIONS
 ```
